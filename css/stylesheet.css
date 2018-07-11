@@ -1,63 +1,35 @@
-/*
-Error: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}"
-        on line 16 of ./stylesheet.scss
+body {
+  background-color: #A2C7E5; }
+  body .wrapper nav {
+    padding: 0 !important; }
+    body .wrapper nav form .right {
+      padding-right: .875rem; }
+  body .wrapper aside {
+    position: relative;
+    display: block;
+    width: 20%;
+    height: 100%;
+    min-height: 100%; }
+    body .wrapper aside ul {
+      list-style: none;
+      text-align: center;
+      padding-left: 0; }
+      body .wrapper aside ul li {
+        font-size: .875rem;
+        padding-bottom: .4rem;
+        padding-top: .4rem;
+        height: 10%; }
+      body .wrapper aside ul .stretch {
+        padding-bottom: 200%; }
+      body .wrapper aside ul .visit-store {
+        background-color: #A2C7E5 !important;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        font-size: .5rem; }
+      body .wrapper aside ul .logo {
+        background-color: #30313F !important;
+        padding: .5rem;
+        color: #fff !important;
+        text-align: center; }
 
-11:         background-color: #fff;
-12: 
-13:         .logo {
-14:             width: 15%;
-15:             background-color: 
-16:         }
-17:     }
-18: }
-
-Backtrace:
-./stylesheet.scss:16
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1179:in `expected'
-/usr/lib/ruby/vendor_ruby/sass/script/lexer.rb:227:in `expected!'
-/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:673:in `assert_expr'
-/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:63:in `parse'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1041:in `sass_script'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:894:in `value!'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:767:in `block in try_declaration'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1155:in `rethrow'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:780:in `try_declaration'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:709:in `declaration_or_ruleset'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:674:in `block_child'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block_contents'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:655:in `block'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:724:in `declaration_or_ruleset'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:674:in `block_child'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block_contents'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:655:in `block'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:724:in `declaration_or_ruleset'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:674:in `block_child'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block_contents'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:655:in `block'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:647:in `ruleset'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:673:in `block_child'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:663:in `block_contents'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:123:in `stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:39:in `parse'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:403:in `_to_tree'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:378:in `_render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:295:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:471:in `on_file_changed'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:328:in `block in watch'
-/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
-/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
-/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
-/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...ckground-color:\": expected expression (e.g. 1px, bold), was \"}\"\A         on line 16 of ./stylesheet.scss\A \A 11:         background-color: #fff;\A 12: \A 13:         .logo {\A 14:             width: 15%;\A 15:             background-color: \A 16:         }\A 17:     }\A 18: }"; }
+/*# sourceMappingURL=stylesheet.css.map */
