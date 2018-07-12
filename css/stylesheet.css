@@ -1,35 +1,81 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
 body {
-  background-color: #A2C7E5; }
-  body .wrapper nav {
-    padding: 0 !important; }
-    body .wrapper nav form .right {
-      padding-right: .875rem; }
-  body .wrapper aside {
-    position: relative;
-    display: block;
-    width: 20%;
-    height: 100%;
-    min-height: 100%; }
-    body .wrapper aside ul {
-      list-style: none;
-      text-align: center;
-      padding-left: 0; }
-      body .wrapper aside ul li {
-        font-size: .875rem;
-        padding-bottom: .4rem;
-        padding-top: .4rem;
-        height: 10%; }
-      body .wrapper aside ul .stretch {
-        padding-bottom: 200%; }
-      body .wrapper aside ul .visit-store {
-        background-color: #A2C7E5 !important;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-        font-size: .5rem; }
-      body .wrapper aside ul .logo {
-        background-color: #30313F !important;
-        padding: .5rem;
-        color: #fff !important;
-        text-align: center; }
+  height: 100%; }
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 0;
+  font-family: Lato, sans-serif;
+  background-color: #92DCE5;
+  font-size: 0.9em; }
+  body .wrapper {
+    flex: 1 0 auto;
+    display: flex; }
+    body .wrapper aside {
+      flex: 0 0 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f2f2f2;
+      font-size: 1em; }
+      body .wrapper aside .brand {
+        color: #fff;
+        text-align: center;
+        background-color: #2B303A;
+        height: 59px;
+        width: 100%;
+        padding-top: 7%;
+        flex: 1 1 auto;
+        box-sizing: border-box;
+        font-size: 1.5rem; }
+      body .wrapper aside div {
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 2rem;
+        border-bottom: 1px solid black; }
+      body .wrapper aside .home {
+        text-align: left;
+        height: 7%;
+        padding-top: 1.5rem;
+        padding-left: 2rem;
+        border-bottom: 1px solid black; }
+      body .wrapper aside .menu-item {
+        height: 5%;
+        padding-top: .6rem; }
+      body .wrapper aside .visit-store {
+        text-align: center;
+        padding-left: 0; }
+        body .wrapper aside .visit-store span {
+          background-color: #92DCE5;
+          box-sizing: border-box;
+          padding: 3px; }
+    body .wrapper .content {
+      width: 100%;
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column; }
+      body .wrapper .content nav {
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: row;
+        flex: 0 0 auto;
+        padding: 1rem; }
+        body .wrapper .content nav .menu {
+          margin-right: auto; }
+        body .wrapper .content nav div {
+          padding-right: .5rem;
+          font-size: 1rem; }
+        body .wrapper .content nav .angleDown {
+          vertical-align: middle;
+          padding: 3px; }
+        body .wrapper .content nav .image {
+          padding: 3px; }
 
 /*# sourceMappingURL=stylesheet.css.map */

@@ -1,51 +1,107 @@
-// Variables
-$colorWhite: #fff;
-// Mixins
-// Styles
+// variables
+$cntrtextAlign: center;
+// mixins
+
+// styles
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
 body {
-    background-color: #A2C7E5;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 0;
+    font-family: Lato, sans-serif;
+    background-color: #92DCE5;
+    font-size: 0.9em;
     .wrapper {
-        nav {
-            padding: 0 !important;
-           
-            form {
-                .right {
-                    padding-right: .875rem;
-                }
-            }
-        } // aside 
+        flex: 1 0 auto;
+        display: flex;
         aside {
-            position: relative;
-            display: block;
-            width: 20%;
-            height: 100%;
-            min-height: 100%;
-            ul {
-                list-style: none;
+            flex: 0 0 20%;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-around;
+            align-items: center;
+            background-color: #f2f2f2;
+            font-size: 1em;
+            // height: 100%;
+            // min-height: 100%;
+            .brand {
+                color: #fff;
+                text-align: center;
+                background-color: #2B303A;
+                height: 59px;
+                width: 100%;
+                padding-top: 7%;
+                flex: 1 1 auto;
+                box-sizing: border-box;
+                font-size: 1.5rem;
+            }
+            div {
+                // height: 10%;
+                box-sizing: border-box;
+                width: 100%;
+                // text-align: center;
+                padding-left: 2rem;
+                border-bottom: 1px solid black;
+            }
+            .home {
+                text-align: left;
+                height: 7%;
+                padding-top: 1.5rem; 
+                padding-left: 2rem;
+                border-bottom: 1px solid black;
+                // height: 100%;
+            }
+            .menu-item {
+                height: 5%;
+                padding-top: .6rem; 
+            }
+            .visit-store {
                 text-align: center;
                 padding-left: 0;
-                li {
-                    font-size: .875rem;
-                    padding-bottom: .4rem;
-                    padding-top: .4rem;
-                    height: 10%;
+                span {
+                    background-color: #92DCE5;
+                    box-sizing: border-box;
+                    padding: 3px;
                 }
-                .stretch {
-                    padding-bottom: 200%;
+            }
+        }
+        .content {
+            width: 100%;
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+            nav {
+                // height: 10%;
+                background-color: #f2f2f2;;
+                display: flex;
+                flex-direction: row;
+                flex: 0 0 auto;
+                padding: 1rem;
+                .menu {
+                    margin-right: auto;
                 }
-                .visit-store {
-                    background-color: #A2C7E5 !important;
-                    margin-left: 1.5rem;
-                    margin-right: 1.5rem;
-                    
-                    font-size: .5rem;
+                div {
+                    padding-right: .5rem;
+                    font-size: 1rem;
                 }
-                .logo {
-                    background-color: #30313F !important;
-                    padding: .5rem;
-                    color: $colorWhite !important;
-                    // width: 20%;
-                    text-align: center;
+                .angleDown {
+                    vertical-align: middle;
+                    padding: 3px;
+                }
+                .image {
+                    padding: 3px;
                 }
             }
         }
