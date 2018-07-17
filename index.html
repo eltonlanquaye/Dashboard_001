@@ -15,7 +15,8 @@
   <link rel="stylesheet" href="css/stylesheet.css">
   <!-- Scrollbar Custom CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
+  <!-- Fav Icon -->
+  <link rel="icon" href="media/favicon.png" type="image/gif" sizes="16x16">
   <!-- Font Awesome JS -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
     crossorigin="anonymous"></script>
@@ -133,7 +134,7 @@
       <div class="card first-card">
         <div class="card-header card-head text-center">
           <span>Summary of this month</span>
-          <span class="date-span pull-right" ">01&#47;01&#47;19&ndash;01&#47;01&#47;20</span>
+          <span class="date-span pull-right">01&#47;01&#47;19&ndash;01&#47;01&#47;20</span>
         </div>
         <div class="card-body ">
           <div class="row ">
@@ -177,93 +178,101 @@
         </div>
       </div>
 
-      
+
       <div class="card second-card " style="background: none; border: none; ">
         <div class="card-body ">
           <div class="row ">
             <div class="col-sm-12 col-md-12 col-lg-6 card-1 ">
               <div class="card ">
                 <div class="card-body ">
-                    <h5 class="card-title ">Activity line</h5>
-                  <img src="media/graph.jpeg " class="img-graph " alt="Responsive image ">
+                  <h5 class="card-title ">Activity line</h5>
+                  <!-- <div class="chart-container" style="position: relative; height:40vh; width:80vw"> -->
+                    <canvas id="myChart"></canvas>
+                  <!-- </div> -->
                 </div>
               </div>
             </div>
-            
-           
 
-            <div class="col-sm-12 col-md-12 col-lg-6 clearfix ">
+
+
+            <div class="col-sm-12 col-md-12 col-lg-6">
               <div class="card ">
                 <div class="card-body ">
-                    <table class="table table-hover table-responsive ">
-                        <thead>
-                          <tr>
-                            <th scope="col " colspan="2 ">Top active member</th>
-                            
-                            <th scope="col ">Last</th>
-                            <th scope="col ">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row "><img src="media/avatar5.png " alt="Avatar " class="avatar "></th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row "><img src="media/avatar5.png " alt="Avatar " class="avatar "></th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row "><img src="media/avatar5.png " alt="Avatar " class="avatar "></th>
-                            <td colspan="2 ">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                          <tr>
-                            <th scope="row "><img src="media/avatar5.png " alt="Avatar " class="avatar "></th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row "><img src="media/avatar5.png " alt="Avatar " class="avatar "></th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row "><img src="media/avatar5.png " alt="Avatar " class="avatar "></th>
-                            <td colspan="2 ">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                  <table class="table table-hover table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl ">
+                    <thead>
+                      <tr>
+                        <th scope="col " colspan="2 ">Top active member</th>
+
+                        <th scope="col ">Last</th>
+                        <th scope="col ">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row ">
+                          <img src="media/avatar5.png " alt="Avatar " class="avatar ">
+                        </th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row ">
+                          <img src="media/avatar5.png " alt="Avatar " class="avatar ">
+                        </th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row ">
+                          <img src="media/avatar5.png " alt="Avatar " class="avatar ">
+                        </th>
+                        <td colspan="2 ">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                      <tr>
+                        <th scope="row ">
+                          <img src="media/avatar5.png " alt="Avatar " class="avatar ">
+                        </th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row ">
+                          <img src="media/avatar5.png " alt="Avatar " class="avatar ">
+                        </th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row ">
+                          <img src="media/avatar5.png " alt="Avatar " class="avatar ">
+                        </th>
+                        <td colspan="2 ">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
 
-            
-              <div class="col-sm-12 col-md-12 col-lg-6 clearfix ">
-                <div class="card bg-warning ">
-                  <div class="card-body ">
-                    <h5 class="card-title ">Special title treatment</h5>
-                    <p class="card-text ">With supporting text below as a natural lead-in to additional content.</p>
-  
-                  </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 ">
+              <div class="card bg-warning ">
+                <div class="card-body ">
+                  <h5 class="card-title ">Special title treatment</h5>
+                  <p class="card-text ">With supporting text below as a natural lead-in to additional content.</p>
+
                 </div>
               </div>
-
-           
+            </div>
 
           </div>
         </div>
       </div>
-
-
-
 
 
       <!-- /cards -->
@@ -282,7 +291,9 @@
     crossorigin="anonymous "></script>
   <!-- jQuery Custom Scroller CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js "></script>
-
+  <!-- Chart JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="scripts/chart.js"></script>
   <script type="text/javascript ">
     $(document).ready(function () {
       $("#sidebar ").mCustomScrollbar({
@@ -295,6 +306,17 @@
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
       });
     });
+
+
+    /* Open the sidenav */
+    function openNav() {
+      document.getElementById("#sidebar").style.width = "100%";
+    }
+
+    /* Close/hide the sidenav */
+    function closeNav() {
+      document.getElementById("#sidebar").style.width = "0";
+    }
   </script>
 </body>
 
